@@ -1,0 +1,91 @@
+/* Dashboard Specific Styles */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .dashboard-card {
+    background-color: #1e1e2f;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .dashboard-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .dashboard-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+  
+  .dashboard-card-title {
+    font-size: 0.875rem;
+    color: #8f9ba8;
+    text-transform: uppercase;
+  }
+  
+  .dashboard-card-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .dashboard-card-change {
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dashboard-card-change.positive {
+    color: #2ecc71;
+  }
+  
+  .dashboard-card-change.negative {
+    color: #e74c3c;
+  }
+  
+  .dashboard-chart-container {
+    height: 250px;
+    width: 100%;
+  }
+  
+  .dashboard-performance-tabs {
+    display: flex;
+    background-color: #252531;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .dashboard-performance-tab {
+    flex: 1;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: #8f9ba8;
+    transition: all 0.3s ease;
+  }
+  
+  .dashboard-performance-tab.active {
+    background-color: #2c2c3e;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .top-opportunities-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #2c2c3e;
+  }
+  
+  .top-opportunities-item:last-child {
+    border-bottom: none;
+  }
